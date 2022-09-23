@@ -1,0 +1,9 @@
+UPDATE `permissions_db`.`personnel`SET  `categ` = 'ضباط' WHERE GRADE IN ('عميد' , 'عقيد' , 'رائد' ,'نقيب' , 'ملازم' , 'ملازم أول' , 'مقدم')
+
+UPDATE `permissions_db`.`personnel`SET  `categ` = 'ضباط صف' WHERE GRADE IN ('عريف' ,'عريف أول' , 'وكيل' , 'وكيل أعلى' , 'وكيل أول' )
+
+
+UPDATE `permissions_db`.`personnel`SET  `categ` = 'رجال جيش' WHERE GRADE IN ('جندي متطوع' ,'جندي أول' , 'رقيب' , 'رقيب أول' , 'جندي' )
+
+
+SELECT  DISTINCT (GRADE) FROM personnel
